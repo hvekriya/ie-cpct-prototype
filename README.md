@@ -1,6 +1,6 @@
 # Home Office
 
-This is the prototype for Home Office IE Civil Penalty Compliance Team.
+Prototype made for Home Office IE Civil Penalty Compliance Team.
 
 ## About the prototype kit
 
