@@ -1,0 +1,65 @@
+{% extends "../layout.html" %} {% block content %}
+<main id="content" role="main">
+  <div class="phase-banner-beta">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="search">Home</a></li>
+      <li><a href="searchresults">Documents for case</a></li>
+      <li><a href="upload">Upload a document</a></li>
+    </ol>
+  </div>
+
+  <form action="upload" method="post">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+
+        {% include "includes/validation-error-messages.html" %}
+
+        <h1 class="heading-large">
+        Upload a document to case
+        <span class="heading-secondary">1234-1234-1234-1234</span>
+      </h1>
+
+        <p class="lede text"></p>
+        <div class="form-group">
+
+          <div id="upload-doc">
+            <label class="form-label" for="doctype-upload">Type of document</label>
+            <input class="form-control" id="doctype-upload" name="doctype" type="text" placeholder="e.g. Passport">
+          </div>
+
+        </div>
+
+
+        <form action="{{ URL }}" method="post" class="form">
+          <p class="document-preview-text hidden">
+            Preview of the document to be uploaded:
+          </p>
+
+          <img id="document-preview" class="hidden" src="">
+          <br>
+          <p id='document-name' class="column-two-quarter"></p>
+          <a id="remove-file-upload" class="link remove-upload" href="{{ URL }}">remove</a>
+          <label id="label" class="custom-file-upload">
+            <div id='choose-file'>Choose file</div>
+            <input id="document" type="file" name="document" multiple/>
+          </label>
+        </form>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Upload">
+        </div>
+        <div class="form-group">
+          <a href="searchresults">Cancel</a>
+        </div>
+  </form>
+  </div>
+  </div>
+</main>
+
+{% endblock %}

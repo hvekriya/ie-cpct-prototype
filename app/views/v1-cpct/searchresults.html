@@ -1,0 +1,106 @@
+{% extends "../layout.html" %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner-beta">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="search">Home</a></li>
+      <li><a href="searchresults">Documents for case</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Documents for case</h1>
+
+        <form id="searchform" action="searchresults" method="get" method="get" class="form">
+        <div class="form-group">
+          <label class="form-label" for="caseref">Case reference (e.g. UAN)</label>
+          <input class="form-control" id="caseref" name="caseref" type="text" value="1234-1234-1234-1234">
+          <input class="button" type="submit" value="Find">
+        </div>
+        </form>
+        <p>4 documents found</p>
+      </div>
+
+        <div class="column-third">
+          <aside class="govuk-related-items" role="complementary">
+            <nav role="navigation" aria-labelledby="subsection-title">
+              <ul class="font-xsmall">
+                <li class="status">
+                  <span class="bold">Status</span>
+                  <span class="float-right tag priority-low">Decision Pending</span>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+    </div>
+
+
+    <div class="grid-row">
+        <div class="search-results">
+
+          <table>
+            <caption class="visuallyhidden">Caption to identify a table</caption>
+            <thead>
+              <tr>
+                <th scope="col">Document</th>
+                <th class="numeric" scope="col">Issue date</th>
+                <th class="numeric" scope="col">Receipt date</th>
+                <th class="numeric" scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="../public/images/coversheet.pdf">20170418_1234-1234-1234-1234_<span class="documentName">APPEAL<span></a>
+                </td>
+                <td class="numeric"><span class="tag">16/04/2017</span></td>
+                <td class="numeric">18/04/2017</td>
+                <td class="numeric"><a class="managedoc" href="editdocument">Manage</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="../public/images/objection_cpct.pdf">20170418_1234-1234-1234-1234_<span class="documentName">OBJECTION<span></a>
+                </td>
+                <td class="numeric"><span class="tag">14/04/2017</span></td>
+                <td class="numeric">18/04/2017</td>
+                <td class="numeric"><a class="managedoc" href="editdocument">Manage</a></td>
+             </tr>
+             <tr>
+               <td>
+                 <a href="../public/images/passport.pdf">20170418_1234-1234-1234-1234_<span class="documentName">PASSPORT<span></a>
+               </td>
+               <td class="numeric"><span class="tag">14/04/2017</span></td>
+               <td class="numeric">18/04/2017</td>
+               <td class="numeric"><a class="managedoc" href="editdocument">Manage</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="../public/images/rfi_form.pdf">20170418_1234-1234-1234-1234_<span class="documentName">RFI<span></a>
+              </td>
+              <td class="numeric"><span class="tag">12/04/2017</span></td>
+              <td class="numeric">14/04/2017</td>
+              <td class="numeric"><a class="managedoc" href="editdocument">Manage</a></td>
+           </tr>
+            </tbody>
+          </table>
+          <h2 class="heading-medium">Add another document</h2>
+          <p><a href="upload.html">Upload to case</a></p>
+      </div>
+  </div>
+
+    </form>
+
+  </main>
+
+  {% endblock %}

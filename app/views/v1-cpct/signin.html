@@ -1,0 +1,35 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner-beta">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      {% include "includes/validation-error-messages.html" %}
+
+      <form class="form" method="post">
+        <h1 class="heading-large">Sign in</h1>
+        <p class="lede">Sign in using your username and password</p>
+        <div class="form-group">
+          <label class="form-label" for="customer-reference">Username</label>
+          <input class="form-control" id="customer-reference" type="text" name="reference">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-control" id="password" type="password" name="password">
+        </div>
+
+        <div class="form-group">
+          <button class="button" type="submit">Continue</button>
+        </div>
+      </form>
+    </div>
+</main>
+
+{% endblock %}

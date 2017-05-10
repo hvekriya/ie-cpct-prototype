@@ -1,0 +1,80 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">Information Request</h1>
+
+      <!-- <p class="bold">This is an important request. Please do not ignore it.</p> -->
+      <h3 class="heading-medium">You may be liable for a civil penalty<h3>
+      <p>On 02/05/2017, as a result of routine data sharing with other government departments, we became aware of (a) suspected breach(es) of section 15, by your business.</p>
+
+      <p class="bold">You should provide a response by 20/05/2017.</p>
+      <p>This Information Request is issued in respect of (a) suspected breach(es) under section 15 of the Immigration, Asylum and Nationality Act 2006.</p>
+
+      <h3 class="heading-medium">Who we suspect of working illegally<h3>
+
+        <table>
+          <th>Names of suspected illegal workers</th>
+          <th>Nationality</th>
+          <th>Date of Birth</th>
+
+          <tr>
+            <td>Joe Blogg</td>
+            <td>Canadian</td>
+            <td>Warehouse Assistant</td>
+          </tr>
+
+        </table>
+
+        <h3 class="heading-medium">We request information and evidence from you</h3>
+      <p>We are currently considering the evidence in your case to determine if you are liable for a civil penalty and, if so, for what amount.</p>
+      <p>You can assist us in making an early, fully informed decision by promptly providing us with relevant information and evidence.</p>
+      <p>You should respond to this request accurately and no later than [RESPONSE DUE DATE] to be deemed to be actively co-operating with us in our investigations, then any penalty for which you may be liable may be reduced by £5,000 per illegal worker.</p>
+
+      <h3 class="heading-medium">How to respond</h3>
+      <p>You can complete our digital form by clicking the start now button below.</p>
+      <p>We request where possible that you email the completed Response Form, together with any supporting
+        evidence, to: CPCTenquiries@homeoffice.gsi.gov.uk. If you do not have access to email you can send it by post to:
+        <div class="panel panel-border-narrow">
+          <span class="bold">Civil Penalty Compliance Team</span>
+          <br>PO Box 665
+          <br>Salford
+          <br>M5 0LY
+        </div>or fax it to us on 0870 336 9287.</p>
+      <p>To enable us to take your information and evidence into consideration at the initial case decision stage we must receive it by 20/05/2017. You should also note that this is the final date by which we will consider you to be actively co-operating
+        with our request for information.</p>
+      <p>If you wish to allow a third party (e.g. a legal representative) to respond on your behalf you must ensure you send us a signed letter of authority.</p>
+      <br>
+      <p>
+        <a class="button button-start" href="form0.html" role="button" id="start">Start now</a>
+      </p>
+
+      <h3 class="heading-small">Before you start</h3>
+      <p>You’ll need:</p>
+      <ul class=" list list-bullet">
+        <li>Your evidence ready to upload</li>
+      </ul>
+      <h3 class="heading-small">If you need more information about preventing illegal working</h3>
+      <p>You can visit our website on <a href="https://www.gov.uk/penalties-for-employing-illegal-workers" rel="external">GOV.UK</a> to view our Code of Practice on preventing illegal working and guidance for employers, including guidance which sets out how we administer illegal working civil penalties. You can use our online employers’ toolkit to help you understand your responsibilities and how to carry out the correct right to work checks on your employees.</p>
+      <p>You can call our helpline on 0300 123 4699 if you have any questions about your responsibilities as an employer to prevent illegal working.</p>
+
+    </div>
+
+    <div class="column-third">
+        <aside class="govuk-related-items" role="complementary">
+            <p class="font-xsmall">
+              <span class="bold">Dixy Chicken</span>
+              <br> Dixy Road,
+              <br> Stratford, London
+              <br> EL12 3SY
+            </p>
+        </aside>
+    </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  {% block breadcrumb %}{% include "includes/breadcrumb.html" %}{% endblock %}
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+      <h1 class="heading-large push-top">
+        <span class="heading-secondary">Reference number</span>200123
+        <span class="heading-secondary">Issue Date</span>10/04/2017
+      </h1>
+
+    <h3 class="heading-medium">Business details</h3>
+    <table>
+      <tr>
+        <td class="bold">Trading name</td>
+        <td>Dixy Chicken</td>
+      </tr>
+      <tr>
+        <td class="bold">Trading address</td>
+        <td>Dixy Road, Stratford, London, EL12 3SY</td>
+      </tr>
+
+    </table>
+    <h3 class="heading-medium">Suspected employee details</h3>
+    <table>
+      <th>Employee name</th>
+      <th>Nationality</th>
+      <tr>
+        <td>Joe Blogs</td>
+        <td>Canadian</td>
+      </tr>
+    </table>
+
+    <h3 class="heading-medium">Evidence</h3>
+    <table>
+      <th>Document</th>
+      <th>Upload date</th>
+      <tr>
+        <td>
+          <a href="../public/images/coversheet.pdf"><span class="documentName">Passport<span></a>
+        </td>
+        <td>22/04/2017</td>
+        <!-- <td><a href="rename">Rename</a></td>
+        <td><a href="home">Delete</a></td> -->
+      </tr>
+    </table>
+
+    </div>
+
+    <div class="column-third">
+      <aside class="govuk-related-items" role="complementary">
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li class="status">
+              <span class="bold">Status</span>
+              <span class="float-right tag priority-low">Decision Pending</span>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  {% block breadcrumb %}{% include "includes/breadcrumb.html" %}{% endblock %}
+
+  <h2 class="heading-large">Summary</h2>
+  <h3 class="heading-medium">About you</h3>
+
+  <table class="col-2">
+    <tr>
+      <td>Position in the business</td>
+      <td>Legal advisor</td>
+    </tr>
+
+  </table>
+  <h3 class="heading-medium">Business details</h3>
+
+  <table class="col-2">
+    <tr>
+      <td>Case ref</td>
+      <td>123457689A</td>
+    </tr>
+
+    <tr>
+      <td>Trading name</td>
+      <td>Dixy Chicken</td>
+    </tr>
+
+  </table>
+
+  <h3 class="heading-medium">Suspected employee details</h3>
+
+  <table class="col-2">
+    <tr>
+      <td>Employee name</td>
+      <td>Joe Blogg</td>
+    </tr>
+
+    <tr>
+      <td>Nationality</td>
+      <td>Canadian</td>
+    </tr>
+
+  </table>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-medium">Add Evidence</h2>
+      <div>
+        <a class="button" href="upload">Upload</a>
+      </div>
+    </div>
+  </div>
+  </form>
+
+</main>
+
+{% endblock %}

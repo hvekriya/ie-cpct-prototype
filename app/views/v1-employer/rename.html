@@ -1,0 +1,32 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  {% block breadcrumb %}{% include "includes/breadcrumb.html" %}{% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Rename document</h1>
+      <p class="lede">Change the details of this document</p>
+      <form action="rename" method="post">
+
+        <div class="form-group">
+          <label class="form-label" for="doctype">Type of document</label>
+          <input class="form-control" id="doctype" name="doctype" type="text" value="{{DocumentName}}">
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Save">
+        </div>
+      </form>
+
+        <div class="form-group">
+          <a href="home-afterupload">Cancel</a>
+        </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

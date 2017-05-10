@@ -1,0 +1,67 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  {% block breadcrumb %}{% include "includes/breadcrumb.html" %}{% endblock %}
+
+  <h2 class="heading-large">Summary</h2>
+
+  <h3 class="heading-medium">About you</h3>
+
+  <table class="col-2">
+    <tr>
+      <td>Position in the business</td>
+      <td>HR Manager</td>
+    </tr>
+
+  </table>
+  <h3 class="heading-medium">Business details</h3>
+  <table class="col-2">
+    <tr>
+      <td>Case ref</td>
+      <td>123457689A</td>
+    </tr>
+
+    <tr>
+      <td>Trading name</td>
+      <td>Dixy Chicken</td>
+    </tr>
+
+  </table>
+
+  <h3 class="heading-medium">Suspected employee details</h3>
+
+  <table class="col-2">
+    <tr>
+      <td>Employee name</td>
+      <td>Joe Blogg</td>
+    </tr>
+
+    <tr>
+      <td>Nationality</td>
+      <td>Canadian</td>
+    </tr>
+
+  </table>
+
+  <h2 class="heading-medium">Evidence</h2>
+
+  <table>
+    <tr>
+      <td>
+        <a href="../public/images/coversheet.pdf"><span class="documentName">{{DocumentName}}<span></a>
+      </td>
+      <td><a href="rename">Rename</a></td>
+      <td><a href="home">Delete</a></td>
+    </tr>
+  </table>
+
+  <br>
+  <a class="button grey" href="upload">Upload another evidence</a>
+  <br><br>
+  <a class="button" href="declaration">Continue</a>
+  </form>
+  </div>
+</main>
+
+{% endblock %}

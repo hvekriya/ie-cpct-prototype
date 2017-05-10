@@ -1,0 +1,29 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h2 class="heading-large">
+          Enter your details
+        </h2>
+
+      <form action="form1.html" method="get" class="form">
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">Unquie Reference Number</label>
+          <p class="form-hint">For example, RFI1234</p>
+          <input type="text" class="form-control" id="full-name">
+        </div>
+
+        <br>
+        <br>
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

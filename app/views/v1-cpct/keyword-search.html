@@ -1,0 +1,42 @@
+{% extends "../layout.html" %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner-beta">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="search">Home</a></li>
+      <li><a href="keyword-search">Keyword search</a></li>
+    </ol>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+
+        Keyword search</h1>
+
+        <form id="searchform" action="keyword-search-results" method="get">
+          <div class="form-group">
+            <label class="form-label" for="caseref">Enter a keyword</label>
+            <input class="form-control" id="caseref" name="caseref" type="text">
+          </div>
+
+          <div>
+            <input class="button" type="submit" value="Search">
+          </div>
+        </form>
+
+      </div>
+    </div>
+    </form>
+
+  </main>
+
+  {% endblock %}

@@ -1,0 +1,52 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner-beta">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="search">Home</a></li>
+      <li><a href="exceptions">Unfiled documents</a></li>
+      <li><a href="exception-resolve">Manage unfiled document</a></li>
+    </ol>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-xlarge">
+        Manage unfiled document
+      </h1>
+
+      <p class="lede">Enter the case reference to file this document</p>
+
+      <form action="exceptions-afterresolve" method="get">
+
+        <div id="UAN-questions">
+          <div class="form-group">
+            <label class="form-label" for="documentname">Case reference</label>
+            <input class="form-control" id="documentname" name="documentname" type="text" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+        <div class="form-group">
+          <a href="exceptions">Cancel</a>
+        </div>
+
+        <div class="form-group">
+          <a href="delete-unfiled">Delete this document</a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

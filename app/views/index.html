@@ -1,0 +1,46 @@
+{% extends "layout.html" %} {% block page_title %} Digitise, Store and View {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">IE CPCT Prototypes</h1>
+      <div class="text">
+        <p class="lede">Select which version of the CPCT prototypes you would like to access</p>
+      </div>
+
+      <h2 class="heading-small"><a href="v1-employer/start.html">Version 3 - Employer</a></h2>
+      <div class="text">
+        <li>Consent question added as part of the journey to replace the wet signature part of the paper form</li>
+        <li>About you question added to get details of who’s filling in the digital form</li>
+      </div>
+
+      <h2 class="heading-small"><a href="v1-employer/start.html">Version 2 - Employer</a></h2>
+      <div class="text">
+        <li>Understanding of user needs and pain points from observation & interviews</li>
+        <li>Existing Digitise, Store and View user research and functionality</li>
+        <li>The team’s experience with implementing self-upload functions</li>
+        <li>Link to status <a href="v1-employer/returning">screen</a></li>
+      </div>
+
+      <h2 class="heading-small"><a href="v1-employer/start.html">Version 1 - Employer</a></h2>
+      <div class="text">
+        <li>This was informed the Self-Upload Initial Discovery</li>
+        <li>Similar worlds analysis (APVS, HMRC, HMPO, Private businesses)</li>
+        <li>Research done with CPCT internals users and 2 employers</li>
+        <li>Research done with UKVI internal users</li>
+      </div>
+
+      <h2 class="heading-small"><a href="v1-cpct/signin">Version 1 - Viewer</a></h2>
+      <div class="text">
+        <li>Initial version of the viewer prototype</li>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

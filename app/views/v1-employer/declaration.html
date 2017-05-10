@@ -1,0 +1,31 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  {% block breadcrumb %}{% include "includes/breadcrumb.html" %}{% endblock %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">Declaration</h2>
+
+      <form action="submit.html" method="get">
+
+        <fieldset>
+        <div class="multiple-choice">
+          <p>I confirm that the information I have provided is correct to the best of my knowledge and I understand that the Home Office may routinely share this information with other government departments as required.</p>
+          <label for="business-1" class="block-label selection-button-checkbox">
+            <input id="business-1" type="checkbox" name="SoleTrader" value="SoleTrader">Please check this box to confirm
+          </label>
+        </div>
+        </fieldset>
+        <br>
+        <div class="form-group">
+          <input class="button" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

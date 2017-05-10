@@ -1,0 +1,69 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  {% block breadcrumb %}{% include "includes/breadcrumb.html" %}{% endblock %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">Business details</h2>
+      <p>We have evidence which indicates that you are the owner of the business where we have encountered suspected illegal workers and therefore believe that you are the employer of the workers identified.</p>
+      <p>If this is correct, and you are the employer, you should complete the fields below to confirm your details and then click continue. If, however, you are not the employer of these workers then you should only complete fields below with the details
+        of the correct employer, if this information is known by you.</p>
+
+      <form action="form2.html" method="get">
+        <div class="form-group">
+          <fieldset class="inline">
+          <label class="form-label-bold">Business type</label>
+            <label for="business-1" class="block-label selection-button-radio">
+              <input id="business-1" type="radio" name="SoleTrader" value="SoleTrader">Sole Trader
+            </label>
+            <label for="business-2" class="block-label selection-button-radio">
+              <input id="business-2" type="radio" name="LimitedCompany" value="LimitedCompany">Limited Company
+            </label>
+            <label for="business-3" class="block-label selection-button-radio">
+              <input id="business-3" type="radio" name="Franchise" value="Franchise">Franchise
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="trading-name">Trading name</label>
+          <input type="text" class="form-control" id="trading-name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="trading-name">Trading address</label>
+          <input type="text" class="form-control" id="trading-address">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="trading-name">Registered company name</label>
+          <input type="text" class="form-control" id="registered-name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="trading-name">Registered company address</label>
+          <input type="text" class="form-control" id="registered-addresss">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="trading-name">Business owner's name</label>
+          <input type="text" class="form-control" id="owner-name">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="trading-name">Business owner's address</label>
+          <input type="text" class="form-control" id="business-addresss">
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner-beta">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="search">Home</a></li>
+    </ol>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">Find documents</h1>
+
+      <form id="searchform" action="searchresults" method="get">
+        <div class="form-group">
+          <label class="form-label" for="caseref">Case reference (e.g. UAN)</label>
+          <input class="form-control" id="caseref" name="caseref" type="text">
+        </div>
+
+        <div>
+          <input class="button" type="submit" value="Find">
+        </div>
+      </form>
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <h2 class="heading-medium">Unfiled documents</h2>
+          <p>View a list of documents that were received without a case reference. </p>
+          <p><a href="exceptions.html">View unfiled documents</a></p>
+        </div>
+      </div>
+
+      <div class="grid-row">
+        <div class="column-two-thirds">
+          <h2 class="heading-medium">Keyword search</h2>
+          <p>Search through all the documents in the system with a keyword.</p>
+          <p><a href="keyword-search.html">Keyword search</a></p>
+        </div>
+      </div>
+
+    </div>
+</main>
+
+{% endblock %}

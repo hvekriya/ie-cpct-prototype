@@ -1,0 +1,40 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner-beta">
+    <p>
+      <strong class="phase-tag">BETA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="search">Home</a></li>
+      <li><a href="searchresults">Documents for case</a></li>
+      <li><a href="editdocument">Edit document details</a></li>
+      <li><a href="delete-document">Delete document</a></li>
+    </ol>
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+      Are you sure you would like delete this document?
+      <span class="heading-secondary">20170418_1234-1234-1234-1234_APPEAL</span>
+      </h1>
+
+      <p class="lede">Please note this document will be deleted permanently</p>
+      <form action="searchresults-after-delete" method="get">
+
+        <div class="form-group">
+          <input class="button alert" type="submit" value="Delete this document">
+        </div>
+        <div class="form-group">
+          <a class="managedoc" href="editdocument">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

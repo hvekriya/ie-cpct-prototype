@@ -1,0 +1,28 @@
+{% extends "../layout.html" %} {% block content %}
+
+<main id="content" role="main">
+  {% block phase_banner %}{% include "includes/phase_banner.html" %}{% endblock %}
+  {% block breadcrumb %}{% include "includes/breadcrumb.html" %}{% endblock %}
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">About you</h2>
+
+      <form action="form1.html" method="get">
+
+        <h1 class="heading-medium">What is your position in the business?</h1>
+
+        <div class="form-group">
+          <!-- <label class="form-label-bold" for="trading-name">What is your position in the business?</label> -->
+          <input type="text" class="form-control" id="trading-name">
+        </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
