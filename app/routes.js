@@ -37,6 +37,19 @@ router.post('/v1-employer/rename', function (req, res) {
   }
 })
 
+router.get('/v1-employer/form3', function (req, res) {
+  return res.render('v1-employer/form3')
+})
+
+router.post('/v1-employer/form3', function (req, res) {
+  var Suspected = req.body.suspected
+  if (Suspected === 'Yes') {
+    return res.render('v1-employer/form4')
+  } else {
+    res.render('v1-employer/declaration')
+  }
+})
+
 router.get('/v1-cpct/signin', function (req, res) {
   return res.render('v1-cpct/signin')
 })
